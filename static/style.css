@@ -1,0 +1,408 @@
+/* Основные стили */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    display: flex;
+    min-height: 100vh;
+}
+/* Заголовок (с учетом кнопки) */
+.league-header {
+    margin-top: 10px;  /* Уменьшен отступ */
+    padding-right: 70px; /* Чтобы текст не заходил под кнопку */
+}
+
+.leagues-container {
+    width: 300px;
+    background: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    height: 100vh;
+    overflow-y: auto;
+    position: relative; /* Добавлено для позиционирования кнопки */
+}
+
+
+
+h2 {
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+
+/* Список лиг */
+.leagues-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px; /* Отступ от заголовка */
+}
+
+.league-item {
+    padding: 10px;
+    margin: 5px 0;
+    background: #f9f9f9;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Кнопки админа */
+.admin-btn, .user-btn {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    padding: 8px 12px;
+    font-size: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.admin-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.user-btn
+
+
+/* Общие стили */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Стиль кнопки футбол */
+.football-btn {
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-transform: uppercase;
+}
+
+.football-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.fonbet-btn {
+    background-color: #00a651;
+    color: white;
+    border: none;
+    padding: 20px 60px;
+    font-size: 32px;
+    font-weight: 700;
+    border-radius: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.fonbet-btn:hover {
+    background-color: #008a43;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.fonbet-btn:active {
+    transform: translateY(1px);
+}
+
+/* Страница с лигами */
+.football-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.leagues-list {
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.leagues-list h2 {
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #00a651;
+}
+
+.leagues-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.league-item {
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.league-item:hover {
+    border: 2px solid #333;
+    font-weight: bold;
+}
+
+.league-item:active {
+    background-color: #00a651;
+    color: white;
+    border-color: #00a651;
+}
+
+/* Кнопка админа (как было) */
+.admin-btn {
+    position: fixed;
+    right: 1400px;
+    bottom: 20px;
+    padding: 8px 16px;
+    font-size: 12px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    background-color: #4CAF50;
+    color: white;
+}
+.admin-btn:hover {
+    background-color: #555;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1001;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.modal-content button {
+    background-color: #00a651;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Стили для редактирования в режиме администратора */
+.edit-mode .league-item {
+    cursor: move;
+    position: relative;
+}
+
+.edit-mode .league-item::after {
+    content: "✎";
+    position: absolute;
+    right: 10px;
+    color: #999;
+}
+
+.edit-field {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Стили для редактируемых элементов */
+.edit-mode .league-name {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.edit-mode .league-name:focus {
+    border-color: #00a651;
+    outline: none;
+    background-color: #f9f9f9;
+}
+
+.sortable-ghost {
+    opacity: 0.5;
+    background: #c8ebfb;
+}
+/* Добавьте эти стили в конец файла */
+
+/* Выделение активной лиги */
+.league-item.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.league-item.active .league-name {
+    color: white !important;
+}
+
+/* Стили для редактируемого заголовка */
+.edit-mode .league-title {
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.edit-mode .league-title:focus {
+    border-color: #00a651;
+    outline: none;
+    background-color: #f9f9f9;
+}
+
+/* Стили для редактируемых лиг */
+.edit-mode .league-name {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.edit-mode .league-name:focus {
+    border-color: #00a651;
+    outline: none;
+    background-color: #f9f9f9;
+}
+
+/* Кнопка возврата */
+.back-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 10px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 12px;
+    transition: all 0.2s;
+    z-index: 10;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.back-btn:hover {
+    background-color: #00d2ff;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Сдвигаем кнопку админа ниже */
+.admin-btn {
+    bottom: 20px;
+    left: 20px;
+    /* остальные стили остаются без изменений */
+}
+
+/* Кнопка возврата */
+.back-btn {
+    position: absolute;
+    top: 685px;
+    right: 20px;
+    padding: 8px 16px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+    background-color: #0b7dda;
+}
+
+/* Центрирование кнопки */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.football-main-btn {
+    padding: 20px 40px;
+    background-color: #2E8B57;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.football-main-btn:hover {
+    background-color: #3CB371;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
